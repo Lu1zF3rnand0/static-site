@@ -74,9 +74,13 @@ h1 {
   filter: invert(1);
 }
 
-/* Altere a cor para verde quando o mouse estiver sobre os ícones */
 .social-links img:hover {
-  filter: invert(0) sepia(1) saturate(20);
+  transform: scale(1.2);
+}
+
+/* Links com hover mais suave */
+a:hover {
+  color: #ccc;
 }
 
 /* Media Queries para responsividade */
