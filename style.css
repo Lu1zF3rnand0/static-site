@@ -86,7 +86,7 @@ a:hover {
 /* Media Queries para responsividade */
 @media screen and (max-width: 600px) {
   .matrix-code {
-    max-width: 90%;
+    max-width: 80%;
   }
   .profile-pic {
     width: 150px;
