@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.matrix-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black url("matrix-background.gif") repeat;
+  z-index: -1;
+}
+
+.matrix-code {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+  text-align: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+  border: 4px solid #218221;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilize a cor branca para o texto "Eu sou" */
+#fixed-text {
+  color: #fff;
+  margin-right: 5px;
+}
+
+#underline {
+  visibility: hidden;
+}
+
+/* Estilize a cor verde para as palavras "Luiz Fernando" e "Desenvolvedor" */
+#changing-text {
+  color: #29a929;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease-in-out;
+  /* Altere a cor dos ícones para branco */
+  filter: invert(1);
+}
+
+/* Altere a cor para verde quando o mouse estiver sobre os ícones */
+.social-links img:hover {
+  filter: invert(0) sepia(1) saturate(20);
+}
+
+/* Media Queries para responsividade */
+@media screen and (max-width: 600px) {
+  .matrix-code {
+    max-width: 90%;
+  }
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+}
